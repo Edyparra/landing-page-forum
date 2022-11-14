@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.nav{
+position: fixed;
+background-color: rgb(243, 136, 136);
+width: 100%;
+height: 10vh;
+display: flex;
+z-index: 999;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: auto auto auto 20px;
+}
+.nav ul li{
+    margin-right: 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 1.2em;
+}
+.header{
+    height: 100vh;
+    min-height: 700px;
+    display: grid;
+    grid-area: container1;
+    grid-template-areas: "l r";
+    grid-template-columns: 1fr 1fr;
+    background-image: url(https://img.freepik.com/fotos-gratis/conceito-de-viagem-completo-com-pontos-de-referencia_23-2149153258.jpg?3&w=1480&t=st=1668454918~exp=1668455518~hmac=e1c15dca7d0fd41ac60dae801f8c9dc63de4fa93e8e56af2f5e4f575d55515e6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header .left{
+    grid-area: l;
+    margin-top: 80px;
+}
+.header .left h2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+    color: rgb(131, 77, 7);
+}
+.header .left p{
+    text-align: justify;
+    max-width: 450px;
+    margin: 40px auto;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.616);
+    color: #141414;
+    letter-spacing: 1.5px;
+}
+.header .right{
+    display: flex;
+    margin-top: 80px;
+}
+.header .right form{
+    width: 450px;
+    height: 550px;
+    margin: auto auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.616);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
+   text-align: center;
+   border-radius: 10px;
+}
+.header .right form h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+  
+    margin-bottom: 20px;
+}
+.header .right form input{
+    width: 100%;
+   padding: 20px;
+    border: none;
+    outline: none;
+    margin: 25px auto;
+    border-radius: 5px;
+}
+.header .right form button{
+    
+    padding: 20px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(30, 255, 150, 0.918);
+    cursor: pointer;
+    margin-top: 15px;
+}
+.destinos{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://img.freepik.com/fotos-gratis/mapa-mundial-digital-holograma-fundo-azul_1379-901.jpg?w=1480&t=st=1668455677~exp=1668456277~hmac=c903d3ceed83e5ceb6f42fb41b08440bcc0290af50fdf1d2fddc36de5272bff9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destinos h2{
+    position: absolute;
+    margin-top: -400px;
+    color: rgb(172, 12, 12);
+    background-color: #faf8f8dc;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+.destinos .card{
+    margin-top: 200px;
+    width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 400px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.destinos .card img{
+    width: 100%;
+    height: 80%;
+    margin: auto auto;
+}
+.destinos .card p{
+    font-size: 18px;
+    font-family: monospace;
+    margin-top: 10px;
+}
+.ofertas{
+    background-image: url(https://img.freepik.com/fotos-gratis/globalizacao-global-mapa-do-mundo-conceito-de-conservacao-ambiental_53876-124164.jpg?w=1800&t=st=1668455842~exp=1668456442~hmac=11d1c87368a22988b453ffbf1b762c56dec6665d341337afc253fd58522ef90b);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #c7c7c7;
+    display: flex;
+    justify-content: space-around;
+}
+.ofertas .oferta{
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    height: 400px;
+    background-color: #ffffff;
+    margin: auto auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
+}
+.ofertas .oferta img{
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+       
+}
+.ofertas .oferta button{
+    border: none;
+    padding: 15px;
+    background-color: rgb(238, 224, 34);
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.container-rodape {
+    margin-top: 0px;
+    background-color: rgb(243, 136, 136);
+    height: 60px;
+}
+
+.container-rodape {
+    text-align: center;
+}
+
+
+
+@media (max-width: 900px){
+ .header .left{
+    display: none;
+ }
+ .header .right{
+    width: 100vh;
+ }
+ .destinos{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100%;
+    flex-direction: column;
+ }
+ .destinos .card{
+    margin-top: 20px;
+    width: 300px;
+    min-width: 300px;
+    min-height: 400px;
+    height: 400px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.destinos h2{
+    font-size: 20px;
+    margin-bottom: 850px;
+}
+.ofertas{
+    flex-direction: column;
+    height: 100%;
+    padding-top: 100px;
+}
+.ofertas .oferta{
+    width: 80%;
+    height: 30%;
+    margin-bottom: 30px;
+}
+}
